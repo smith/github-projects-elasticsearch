@@ -17,6 +17,8 @@ jobs:
       ELASTICSEARCH_URL: ${{ secrets.ELASTICSEARCH_URL }}
       ELASTIC_API_KEY: ${{ secrets.ELASTIC_API_KEY }}
       GITHUB_TOKEN: ${{ github.token }}
+    permissions:
+      project: read
     steps:
     - name: Check out the repository to the runner
       uses: actions/checkout@v4  
